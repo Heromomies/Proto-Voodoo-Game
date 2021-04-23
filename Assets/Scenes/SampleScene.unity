@@ -187,7 +187,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -441,8 +441,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 443927024}
   m_LocalRotation: {x: -0, y: 0.008026219, z: -0, w: 0.9999678}
-  m_LocalPosition: {x: 0.04, y: 3.9, z: 4.25}
-  m_LocalScale: {x: 9.5268, y: 7.8869305, z: 0.42834}
+  m_LocalPosition: {x: 0.04, y: 3.9, z: 5.28}
+  m_LocalScale: {x: 10, y: 8, z: 0.2}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
@@ -460,7 +460,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreTxt: {fileID: 15973640}
-  score: 9
+  _score: 0
+  confettis: {fileID: 7549264167898071458, guid: 80b1af811be6a3a4591f2b5222e67d58,
+    type: 3}
   speed: 5
   minPos: {fileID: 1015882588}
   maxPos: {fileID: 1093925739}
@@ -591,8 +593,8 @@ Camera:
   m_GameObject: {fileID: 963194225}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0.2695922, g: 0.19215688, b: 0.4745098, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -632,8 +634,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.02880083, y: 0.017987067, z: -0.00051831506, w: 0.9994232}
-  m_LocalPosition: {x: -0.16251254, y: 4.9124293, z: -12.023539}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 5, z: -15}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

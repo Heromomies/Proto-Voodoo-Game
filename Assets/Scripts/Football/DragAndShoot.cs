@@ -7,13 +7,11 @@ using UnityEngine;
 [RequireComponent(typeof(Collider))]
 public class DragAndShoot : MonoBehaviour
 {
-    private Vector3 _mousePressDownPos, _mouseReleasePos;
-
-    private Rigidbody _rb;
-
-    private bool _isShoot;
-
     public float forceMultiplier;
+    
+    private Vector3 _mousePressDownPos, _mouseReleasePos;
+    private Rigidbody _rb;
+    private bool _isShoot;
     
     // Start is called before the first frame update
     void Start()
@@ -39,7 +37,6 @@ public class DragAndShoot : MonoBehaviour
         
         _rb.AddForce(new Vector3(force.x, force.y, force.y) * forceMultiplier);
         _isShoot = true;
-        
-        Destroy(gameObject, 2f);
     }
+    
 }
