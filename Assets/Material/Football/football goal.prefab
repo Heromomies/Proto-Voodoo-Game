@@ -143,3 +143,6 @@ MonoBehaviour:
   speed: 5
   minPos: {fileID: 0}
   maxPos: {fileID: 0}
+  duration: 0.3
+  strength: 0.2
+  vibrato: 90

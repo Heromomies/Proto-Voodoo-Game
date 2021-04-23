@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using DG.Tweening;
 using TMPro;
 using UnityEngine;
 
@@ -13,6 +14,11 @@ public class Goal : MonoBehaviour
     public float speed;
     public Transform minPos, maxPos;
 
+    [Header("Camera Shake Parameters")] 
+    public float duration;
+    public float strength;
+    public int vibrato;
+    
     private bool _goRight, _goUp, _goLeft, _goDown;
     
     // Update is called once per frame
@@ -127,6 +133,8 @@ public class Goal : MonoBehaviour
         {
             GameObject cf = Instantiate(confettis, other.transform.position, Quaternion.identity);
             Destroy(cf, 0.5f);
+            Camera.main.DOShakePosition(duration, strength, vibrato);
+            Camera.main.DOShakeRotation(duration, strength, vibrato);
             _score++;
             scoreTxt.text = $"Score : {_score}";
             Destroy(other.gameObject);

@@ -25,7 +25,7 @@ public class DragAndShoot : MonoBehaviour
             if (timeRemaining > 0)
             {
                 timeRemaining -= Time.deltaTime;
-                gameObject.transform.Rotate(180f, 180f, 0.0f, Space.Self);
+                //gameObject.transform.Rotate(180f, 180f, 0.0f, Space.Self);
             }
             else
             {

@@ -123,5 +123,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 837488a4035f7134c964d4a4cff058e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forceMultiplier: 1.2
+  forceMultiplier: 1.5
   timeRemaining: 4
