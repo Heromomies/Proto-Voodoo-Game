@@ -25,6 +25,8 @@
         </e>
         <e p="Scripts" t="Include">
           <e p="Football" t="Include">
+            <e p="BoxDeath.cs" t="Include" />
+            <e p="ButtonFunctions.cs" t="Include" />
             <e p="DragAndShoot.cs" t="Include" />
             <e p="Goal.cs" t="Include" />
             <e p="SpawnerBall.cs" t="Include" />
