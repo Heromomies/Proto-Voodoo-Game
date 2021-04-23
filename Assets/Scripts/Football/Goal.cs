@@ -9,58 +9,29 @@ public class Goal : MonoBehaviour
     public TextMeshProUGUI scoreTxt;
     public float score;
 
-    public enum Direction
-    {
-        Right,
-        Left,
-        Up,
-        Down
-    }
-
     public float speed;
     public Transform minPos, maxPos;
-    public Direction myDirection;
-    
+
     private bool _goRight, _goUp, _goLeft, _goDown;
-
-    private void Start()
-    {
-        if (myDirection == Direction.Right)
-        {
-            _goRight = true;
-        }
-        if (myDirection == Direction.Up)
-        {
-            _goUp = true;
-        }
-        if (myDirection == Direction.Left)
-        {
-            _goLeft = true;
-        }
-        if (myDirection == Direction.Down)
-        {
-            _goDown = true;
-        }
-    }
-
+    
     // Update is called once per frame
     void Update()
     {
-        if (score > 5)
+        if (score > 5 && score <= 10)
         {
             Right();
         }
-       
-        Up();
-        Left();
-        Down();
+
+        if (score > 10)
+        {
+            Down();
+            Right();
+        }
     }
 
     void Right()
     {
-        if (myDirection == Direction.Right)
-        {
-            if (_goRight)
+        if (_goRight)
             {
                 transform.Translate(Vector2.right * (Time.deltaTime * speed));
             }
@@ -75,13 +46,12 @@ public class Goal : MonoBehaviour
             if (transform.position.x <= minPos.position.x)
             {
                 _goRight = true;
-            }
         }
+        
     }
     void Left()
     {
-        if (myDirection == Direction.Left)
-        {
+       
             if (_goLeft)
             {
                 transform.Translate(Vector2.left * (Time.deltaTime * speed));
@@ -98,12 +68,11 @@ public class Goal : MonoBehaviour
             {
                 _goLeft = false;
             }
-        }
+        
     }
     void Up()
     {
-        if (myDirection == Direction.Up)
-        {
+        
             if (_goUp)
             {
                 transform.Translate(Vector2.up * (Time.deltaTime * speed));
@@ -120,12 +89,11 @@ public class Goal : MonoBehaviour
             {
                 _goUp = true;
             }
-        }
+        
     }
     void Down()
     {
-        if (myDirection == Direction.Down)
-        {
+        
             if (_goDown)
             {
                 transform.Translate(Vector2.down * (Time.deltaTime * speed));
@@ -142,7 +110,7 @@ public class Goal : MonoBehaviour
             {
                 _goDown = true;
             }
-        }
+        
     }
     public void OnTriggerEnter(Collider other)
     {
