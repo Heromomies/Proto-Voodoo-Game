@@ -36,8 +36,9 @@
           </e>
           <e p="KnifeGame" t="Include">
             <e p="CircleGetKnifed.cs" t="Include" />
+            <e p="Death.cs" t="Include" />
             <e p="Knife.cs" t="Include" />
-            <e p="KnifeController.cs" t="Include" />
+            <e p="KnifeSpawner.cs" t="Include" />
           </e>
           <e p="Proto01" t="Include">
             <e p="PlayerControllerProto1.cs" t="Include" />
