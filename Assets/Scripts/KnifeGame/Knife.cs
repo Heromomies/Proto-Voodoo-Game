@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class Knife : MonoBehaviour
 {
+    
     public float speed;
     public bool isMoving = true;
     
@@ -22,6 +23,7 @@ public class Knife : MonoBehaviour
         isMoving = false;
         gameObject.transform.parent = other.transform;
         GetComponent<SpriteRenderer>().sortingOrder = -1;
+        
         if (other.GetComponent<Knife>())
         {
             Death.Instance.Dead();

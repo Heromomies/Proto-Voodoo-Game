@@ -5,9 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class ButtonFunctions : MonoBehaviour
 {
-    public void Restart()
+    public void Restart(int numberScene)
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(numberScene);
         Time.timeScale =1f;
     }
 

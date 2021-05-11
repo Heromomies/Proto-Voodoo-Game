@@ -15,7 +15,7 @@ public class KnifeSpawner : MonoBehaviour
     public int numberMaxKnife;
     public float waitingTime;
 
-    public TextMeshProUGUI textLaunchedKnife;
+    public TextMeshProUGUI textLaunchedKnife, newStageReached;
     
     private int _numberKnife;
     private int _numberLevel = 1;
@@ -34,6 +34,7 @@ public class KnifeSpawner : MonoBehaviour
         
         if (Input.GetMouseButtonDown(0) && numberMaxKnife > 0 && _timer > waitingTime)
         {
+            newStageReached.text = "";
             Instantiate(knife, transform.position, Quaternion.identity);
             numberMaxKnife--;
             _timer = 0;
@@ -42,9 +43,10 @@ public class KnifeSpawner : MonoBehaviour
             textLaunchedKnife.text = $"{_launchedKnife}";
         }
 
-        if (numberMaxKnife <= 0)
+        if (numberMaxKnife <= 0 && _timer > waitingTime +0.5)
         {
             NewLevel();
+            newStageReached.text = "New Stage Reached";
             _numberLevel++;
         }
     }
@@ -64,10 +66,12 @@ public class KnifeSpawner : MonoBehaviour
             img.color = Color.white;
         }
         
-        Image image = Instantiate(imageKnife[0], transform.position, Quaternion.identity);
+        Image image = Instantiate(imageKnife[0], transform.position, transform.rotation);
         image.transform.parent = panelKnife.transform;
+        image.rectTransform.localScale = new Vector2(1, 1);
+        
         imageKnife.Add(image);
         
-        panelKnife.GetComponent<VerticalLayoutGroup>().padding.top -= 40;
+        panelKnife.GetComponent<VerticalLayoutGroup>().padding.top -= 300;
     }
 }
