@@ -24,6 +24,9 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
+          <e p="Cam" t="Include">
+            <e p="FlyCamera.cs" t="Include" />
+          </e>
           <e p="Football" t="Include">
             <e p="BoxDeath.cs" t="Include" />
             <e p="ButtonFunctions.cs" t="Include" />
@@ -31,6 +34,24 @@
             <e p="Goal.cs" t="Include" />
             <e p="SpawnerBall.cs" t="Include" />
           </e>
+          <e p="KnifeGame" t="Include">
+            <e p="CircleGetKnifed.cs" t="Include" />
+            <e p="Knife.cs" t="Include" />
+            <e p="KnifeController.cs" t="Include" />
+          </e>
+          <e p="Proto01" t="Include">
+            <e p="PlayerControllerProto1.cs" t="Include" />
+          </e>
+        </e>
+        <e p="SwipeDetector" t="Include">
+          <e p="Assets" t="Include">
+            <e p="Code" t="Include">
+              <e p="PlayerControl.cs" t="Include" />
+            </e>
+          </e>
+          <e p="SwipeDetector.cs" t="Include" />
+          <e p="SwipeDrawer.cs" t="Include" />
+          <e p="SwipeLogger.cs" t="Include" />
         </e>
         <e p="TextMesh Pro" t="Include">
           <e p="Examples &amp; Extras" t="Include">
