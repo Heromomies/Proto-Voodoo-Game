@@ -1,0 +1,6 @@
+Animation quand 2 couteaux se touchent
+Des graphismes.
+Déplacer le score vers la droite
+Changer le pattern du circle au fur et à mesure du stage 
+Rajouter du shake 
+Des particules

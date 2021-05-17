@@ -32,5 +32,6 @@ public class Death : MonoBehaviour
     public void Dead()
     {
         panel.SetActive(true);
+        Time.timeScale = 0f;
     }
 }
