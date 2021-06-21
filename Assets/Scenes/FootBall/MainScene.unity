@@ -534,10 +534,10 @@ RectTransform:
   m_Father: {fileID: 2102638781}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.27060416, y: 0.36830392}
-  m_AnchorMax: {x: 0.73039585, y: 0.41000003}
-  m_AnchoredPosition: {x: -1, y: -3}
-  m_SizeDelta: {x: -724, y: -128}
+  m_AnchorMin: {x: 0.27060416, y: 0.34748957}
+  m_AnchorMax: {x: 0.7304583, y: 0.44178042}
+  m_AnchoredPosition: {x: -1, y: 12.900024}
+  m_SizeDelta: {x: -724, y: -265.5946}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &576998207
 MonoBehaviour:
@@ -584,11 +584,11 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 23090437}
         m_MethodName: Restart
-        m_Mode: 1
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0

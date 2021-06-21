@@ -47,6 +47,7 @@ public class KnifeSpawner : MonoBehaviour
         {
             NewLevel();
             newStageReached.text = "New Stage Reached";
+            circleTransform.GetComponent<CircleGetKnifed>().level++;
             _numberLevel++;
         }
     }

@@ -39,6 +39,7 @@
             <e p="Death.cs" t="Include" />
             <e p="Knife.cs" t="Include" />
             <e p="KnifeSpawner.cs" t="Include" />
+            <e p="TODO.txt" t="Include" />
           </e>
           <e p="Proto01" t="Include">
             <e p="PlayerControllerProto1.cs" t="Include" />

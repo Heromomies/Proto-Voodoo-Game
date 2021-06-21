@@ -5,6 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class ButtonFunctions : MonoBehaviour
 {
+    public void Play(int numberScene)
+    {
+        SceneManager.LoadScene(numberScene);
+        Time.timeScale =1f;
+    }
     public void Restart(int numberScene)
     {
         SceneManager.LoadScene(numberScene);
