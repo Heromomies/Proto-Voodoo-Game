@@ -24,9 +24,6 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
-          <e p="Cam" t="Include">
-            <e p="FlyCamera.cs" t="Include" />
-          </e>
           <e p="Football" t="Include">
             <e p="BoxDeath.cs" t="Include" />
             <e p="ButtonFunctions.cs" t="Include" />
@@ -40,6 +37,10 @@
             <e p="Knife.cs" t="Include" />
             <e p="KnifeSpawner.cs" t="Include" />
             <e p="TODO.txt" t="Include" />
+          </e>
+          <e p="MineSweeper" t="Include">
+            <e p="Block.cs" t="Include" />
+            <e p="Board.cs" t="Include" />
           </e>
           <e p="Proto01" t="Include">
             <e p="PlayerControllerProto1.cs" t="Include" />
